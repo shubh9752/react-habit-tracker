@@ -1,13 +1,204 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family:  Helvetica, sans-serif;
+  background: linear-gradient(-120deg, rgb(149, 220, 216), rgb(151, 217, 250));
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+ 
+}
+
+
+#root {
+ 
+  width: 100%;
+  border-right: 3px solid #0869e7;
+  border-left: 2px solid #3c0adf;
+ 
+}
+
+/* this is for navbar section */
+.nav {
+  border-radius: 10px;
+  background-color: #0897e9;
+  padding: 20px 20px; 
+  border: 2px solid #fbebeb;
+  border-bottom: 2px solid #4ae59a;
+ 
+  
+  
+}
+
+
+
+
+/* this section is for time showing */
+.greeting {
+  border-top: 1px solid rgb(181, 233, 122);
+  border-radius: 0.9rem 0.5rem;
+  font-family: auto;
+  color: #4ae59a;
+ 
+}
+
+/* this section is for add habit */
+.addinghabit-btn {
+  color: #1c2d8f;
+  background-color: #ffffff;
+  padding: 0.2rem 1rem;
+  border-radius:0.2rem;
+  font-weight: 700;
+}
+
+.addinghabit-btn:hover {
+  color: #ffffff;
+  background-color: #b1b9e7;
+}
+
+
+/* this section is for modal */
+.modal-content {
+ 
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #2720e6;
+}
+
+.modal-content input {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-footer {
+  border: none;
+}
+
+/* these are the habits under habit component */
+
+
+.habit-container {
+  background-color: #43f1d4;
+  border-bottom: 1px dashed #0d3ce7;
+  padding: 0px 20px;
+  border-radius: 1.8rem 1.8rem;
+}
+
+.habit-container:hover {
+  background-color: #48e8ca;
+}
+
+.habit-name {
+  margin: 0.4rem 0 0.6rem 0;
+  font-style: oblique;
+  font-family: auto;
+  font-size: 2.5rem;
+  color: #0e41fc;
+  font-weight: 800;
+}
+
+
+
+.habit-left i {
+  color: #12d459;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #39eaac;
+  margin-right: 10px;
+}
+
+
+
+.habit-right {
+  display: flex;
+  align-items: center;
+}
+
+.dayView-btn {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #1fe894;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  margin-right: 0.7rem;
+  color: white;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.dayView-btn:hover {
+  background-color: rgb(204, 244, 234);
+  color: #040223;
+  transform: scale(1.03);
+}
+
+.dayView-btn i {
+  margin-right: 0.5rem;
+}
+
+.fa-trash {
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  color:red;
+  background-color: #f4f7f7;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-trash:hover {
+  background-color: rgb(250, 86, 86);
+  color: #f1f1f4;
+  transform: scale(1.03);
+}
+
+.days-container {
+  margin: 1rem ;
+  
+}
+
+.day-container {
+  height: 7rem;
+  width: 100%;
+  background-color: #62e1bd;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  margin: 0.5rem;
+}
+
+.circle-icon {
+  font-size: 2rem;
+  margin: 0.2rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.active {
+  color: #074df0;
+}
+
+.circle-icon:hover {
+  transform: scale(1.2);
+}
+
+.day-container:hover {
+  color: #2c4bf8;
+  background-color: rgb(36, 219, 127);
+}
+
+/* for small screen responsiveness */
+@media screen and (max-width:516px) {
+  .nav {
+    justify-content: space-evenly;
+
+  }
 }
