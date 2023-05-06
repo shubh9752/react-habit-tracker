@@ -1,3 +1,42 @@
+
+
+# React App
+
+This is a single-page application built with React, using the libraries `react-router-dom`, `redux`, `redux-toolkit`, and `bootstrap`.
+
+## Description
+
+The app is designed to make a record of your daily routines.
+
+## Features
+
+- you can add habit
+- you can delete a habit
+- you can see previous seven day record of your habit
+
+## Installation
+
+To run this app locally, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install the necessary dependencies.
+4. Run `npm start` to start the development server.
+5. Open your browser and navigate to `http://localhost:3000`.
+
+## Deployment
+
+The app is deployed on [Vercel](https://vercel.com/). You can access it through this [link](https://youtu.be/87Jj5ZODn4M).
+
+
+
+---
+
+Thank you for using our app! We hope you find it useful and enjoyable. If you have any feedback or suggestions, please don't hesitate to reach out to us.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
